@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.oluwatobig.hangmaan.MainActivity">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:src="@drawable/hangdroid_0"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/wrongGuess"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="65dp"/>
+
+    <LinearLayout
+        android:id="@+id/correctGuessLayout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="270dp"
+        android:layout_marginRight="35dp">
+        <!--android:layout_below="@id/wrongGuess"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"-->
+
+        <TextView
+            android:id="@+id/correctGuess1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:text="@string/underscore"/>
+
+        <TextView
+            android:id="@+id/correctGuess2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="@string/underscore"
+            android:textColor="#000"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/correctGuess3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="@string/underscore"
+            android:textColor="#000"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/correctGuess4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="@string/underscore"
+            android:textColor="#000"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addLetterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1.5"
+           android:text="@string/input"
+           android:textStyle="bold"
+           android:textColor="#000"
+           android:gravity="center_vertical|center_horizontal"
+           android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/guessEditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:inputType="textCapCharacters"
+            android:outlineProvider="paddedBounds"
+            android:maxLength="1"
+            android:layout_marginRight="22dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/checkButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/check"
+            android:onClick="inputLetter"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>

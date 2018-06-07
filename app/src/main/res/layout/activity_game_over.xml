@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gameOver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.oluwatobig.hangmaan.MainActivity">
+
+    <ImageView
+        android:id="@+id/gameOverBackground_image"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:src="@drawable/game_over"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:id="@+id/pointsLayout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="270dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:id="@+id/pointsDigit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewEnd"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/pointsWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:text="@string/points"
+            android:textColor="#000"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/playerName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:hint="@string/player_name"
+            android:layout_marginRight="22dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/save_entry"
+            android:onClick="saveScore"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>

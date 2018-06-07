@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HangMaan</string>
+    <string name="check">CHECK</string>
+    <string name="input">Input Letter</string>
+    <string name="underscore">_</string>
+    <string name="singleP">Single Player</string>
+    <string name="multiP">Multi  Player</string>
+    <string name="game_over">Game Over</string>
+    <string name="scores">Scores</string>
+    <string name="points">Points</string>
+    <string name="save_entry">Save</string>
+    <string name="player_name">Player Name</string>
+    <string name="introduce">Your Word</string>
+    <string name="play">Play</string>
+</resources>
